@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: -webkit-linear-gradient(90deg,#050505,#363636,#413b3b,#413939); 
+    background: linear-gradient(90deg,#050505,#363636,#575353,#383333);
+}
+
+header {
+    padding: 25px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h2 {
+    color: orange;
+    text-shadow: 0 0 5px orange;
+    margin: 0;
+    transition: .5s;
+}
+
+.navbar h2:hover {
+    text-shadow: 0 0 30px orange;
+}
+
+.navbar img {
+    width: 42px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navbar_row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar_row h2 {
+    color: white;
+}
+
+.navbar button {
+    background-color: orange;
+    box-shadow: 0 0 5px orange;
+    padding: 15px 0;
+    width: 100px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.navbar button:hover {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 20px;
+    background-color: transparent;
+    color: azure;
+    border: 1px solid orange;
+}
+
+.banner {
+    width: 100%;
+    height: 80vh;
+    background: url("https://cubiq.ru/wp-content/uploads/2020/02/anime-art-paren-naruto-naruto-uzumaki.jpg");
+    
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.filters select {
+    padding: 25px 20px;
+    width: 30%;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid orange;
+    color: grey;
+    outline: none;
+    box-shadow: 0 0 10px rgb(206, 145, 33);
+}
+
+.filters input {
+    padding: 25px 20px;
+    width: 90%;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid orange;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(206, 145, 33);
+    font-size: 20px;
+    outline: none;
+    color: orange;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    row-gap: 30px;
+}
+
+.card {
+    background-color: rgba(248, 242, 242, 0.1);
+    box-shadow: 0 0 13px orange;
+    width: 29.6%;
+    height: 420px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card h2 {
+    text-shadow: 0 0 5px orange;
+}
+
+.card img {
+    width: 100%;
+    height: 232px;
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.card button {
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 5px orange;
+    color: white;
+    font-size: 20px;
+    margin: 15px 0;
+    padding: 15px 0;
+    cursor: pointer;
+    border: 2px solid orange;
+    transition: .5s;
+}
+
+.card button:hover {
+    color: orange;
+}
+
+.card .delete {
+    width: 100%;
+    font-size: 15px;
+    padding: 8px 0;
+    margin-top: 0;
+    color: white;
+    letter-spacing: 1;
+}
+
+.card .delete:hover {
+    color: red;
+}
+
+aside {
+    width: 18%;
+    height: 100vh;
+    background-color: rgb(2, 20, 24);
+    box-shadow: 0 0 5px white;
+    position: fixed;
+    left: -19%;
+    top: 0;
+    transition: .5s;
+    text-align: center;
+}
+
+.activeSidebar {
+    left: 0;
+}
+
+aside form input {
+    width: 80%;
+    padding: 18px 15px;
+    margin: 15px 0;
+    font-size: 17px;
+    box-shadow: 0 0 10px orange;
+    border: 0;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    background-color: #413b3b;
+}
+
+aside form button {
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 180px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    background-color: orange;
+    font-size: 17px;
+    box-shadow: 0 0 10px orange;
+}
+
+.sidebar h2 {
+    color: orange;
+}
+
+.bars {
+    position: absolute;
+    cursor: pointer;
+    top: 4%;
+    right: -20%;
+    transition: .5s;
+}
+
+.activeBar {
+    right: 5%;
+    top: 2.5%;
+}
+
+.bars div {
+    width: 30px;
+    height: 3px;
+    background-color: orange;
+    box-shadow: 0 0 5px orange;
+    border-radius: 10px;
+    margin: 4px 0;
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+}
